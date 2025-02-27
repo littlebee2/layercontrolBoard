@@ -243,6 +243,17 @@ menu "On-chip Peripheral Drivers"
     			bool "Using CAN1"
     			default n
     endif
+	
+	if BSP_USING_LED
+		config BSP_USING_LED1
+				bool "Using LED1"
+				default n
+		config BSP_USING_LED2
+				bool "Using LED2"
+				default n
+		config BSP_USING_LED3
+				bool "Using LED3"
+				default n
 
     source "../libraries/gd32_drivers/Kconfig"
 
