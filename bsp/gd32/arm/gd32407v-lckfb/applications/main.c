@@ -20,6 +20,7 @@
 #include "event.h"
 #include "lock.h"
 #include "DC_Motor.h"
+#include "leddisplay.h"
 //#include "comcan.h"
 
 /*---------------------------------------------------------*/
@@ -89,12 +90,13 @@ int main(void)
 	Lock_Init();
 	CanInit(CAN_PORT0);
 	CanInit(CAN_PORT1);
-	dc_init();
-	StepMotor_Init();
+	LedDisplayInit();
+	//dc_init();
+	//StepMotor_Init();
 	while(1)
 	{
-		dc_test();
-		StepMotor_Handler();
+		//dc_test();
+		//StepMotor_Handler();
 		LED_Handler();
 		Event_Handler();
 		rt_thread_mdelay(10);

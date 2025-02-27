@@ -254,6 +254,7 @@ menu "On-chip Peripheral Drivers"
 		config BSP_USING_LED3
 				bool "Using LED3"
 				default n
+	endif
 
     source "../libraries/gd32_drivers/Kconfig"
 

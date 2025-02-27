@@ -338,9 +338,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>GD32F407, RT_USING_ARMLIBC, __CLK_TCK=RT_TICK_PER_SECOND, __STDC_LIMIT_MACROS, LCKFB_SKYSTART_GD32F407V, USE_STDPERIPH_DRIVER, __RTTHREAD__, RT_USING_LIBC</Define>
+              <Define>RT_USING_ARMLIBC, __RTTHREAD__, GD32F407, __CLK_TCK=RT_TICK_PER_SECOND, RT_USING_LIBC, USE_STDPERIPH_DRIVER, LCKFB_SKYSTART_GD32F407V, __STDC_LIMIT_MACROS</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\..\components\drivers\include;packages\dht11-latest;..\..\..\..\components\drivers\include;board;..\..\..\..\include;..\..\..\..\libcpu\arm\common;..\..\..\..\components\libc\compilers\common\include;..\..\..\..\components\libc\compilers\common\extension\fcntl\octal;..\..\..\..\components\libc\posix\io\epoll;..\..\..\..\components\finsh;..\..\..\..\components\drivers\include;..\..\..\..\components\drivers\include;..\libraries\GD32F4xx_Firmware_Library\CMSIS;applications;..\..\..\..\libcpu\arm\cortex-m4;..\..\..\..\components\libc\compilers\common\extension;..\..\..\..\components\libc\posix\io\poll;..\..\..\..\components\drivers\include;..\libraries\gd32_drivers;..\..\..\..\components\libc\posix\ipc;..\..\..\..\components\libc\posix\io\eventfd;.;..\..\..\..\components\drivers\include;..\libraries\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include;..\..\..\..\components\drivers\include;..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include;..\..\..\..\components\drivers\include</IncludePath>
+              <IncludePath>..\..\..\..\components\libc\compilers\common\include;..\..\..\..\components\drivers\include;..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Include;..\..\..\..\components\libc\posix\io\epoll;board;..\..\..\..\libcpu\arm\common;..\..\..\..\components\finsh;..\..\..\..\components\drivers\include;..\..\..\..\components\libc\posix\io\poll;applications;..\..\..\..\components\drivers\include;packages\dht11-latest;..\..\..\..\components\libc\posix\io\eventfd;..\..\..\..\components\drivers\include;..\..\..\..\include;..\..\..\..\components\libc\posix\ipc;..\..\..\..\components\drivers\include;.;..\libraries\GD32F4xx_Firmware_Library\CMSIS;..\..\..\..\components\drivers\include;..\..\..\..\components\libc\compilers\common\extension\fcntl\octal;..\..\..\..\components\drivers\include;..\..\..\..\components\libc\compilers\common\extension;..\libraries\gd32_drivers;..\..\..\..\libcpu\arm\cortex-m4;..\libraries\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Include;..\..\..\..\components\drivers\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -385,141 +385,9 @@
           <GroupName>Applications</GroupName>
           <Files>
             <File>
-              <FileName>comcan.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>applications\comcan.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>lock.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>applications\lock.c</FilePath>
-            </File>
-            <File>
-              <FileName>eeprom.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>applications\eeprom.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>1</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <uC99>2</uC99>
-                    <uGnu>2</uGnu>
-                    <useXO>2</useXO>
-                    <v6Lang>0</v6Lang>
-                    <v6LangP>0</v6LangP>
-                    <vShortEn>2</vShortEn>
-                    <vShortWch>2</vShortWch>
-                    <v6Lto>2</v6Lto>
-                    <v6WtE>2</v6WtE>
-                    <v6Rtti>2</v6Rtti>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>applications\led.c</FilePath>
-            </File>
-            <File>
               <FileName>Step_Motor.c</FileName>
               <FileType>1</FileType>
               <FilePath>applications\Step_Motor.c</FilePath>
-            </File>
-            <File>
-              <FileName>crc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>applications\crc.c</FilePath>
-            </File>
-            <File>
-              <FileName>mycan.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>applications\mycan.c</FilePath>
             </File>
             <File>
               <FileName>event.c</FileName>
@@ -527,14 +395,9 @@
               <FilePath>applications\event.c</FilePath>
             </File>
             <File>
-              <FileName>main.c</FileName>
+              <FileName>lock.c</FileName>
               <FileType>1</FileType>
-              <FilePath>applications\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>device.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>applications\device.c</FilePath>
+              <FilePath>applications\lock.c</FilePath>
             </File>
             <File>
               <FileName>DC_Motor.c</FileName>
@@ -542,9 +405,49 @@
               <FilePath>applications\DC_Motor.c</FilePath>
             </File>
             <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>device.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\device.c</FilePath>
+            </File>
+            <File>
+              <FileName>mycan.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\mycan.c</FilePath>
+            </File>
+            <File>
+              <FileName>eeprom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\eeprom.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\crc.c</FilePath>
+            </File>
+            <File>
               <FileName>fm24cl16b.c</FileName>
               <FileType>1</FileType>
               <FilePath>applications\fm24cl16b.c</FilePath>
+            </File>
+            <File>
+              <FileName>leddisplay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\leddisplay.c</FilePath>
+            </File>
+            <File>
+              <FileName>comcan.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications\comcan.c</FilePath>
               <FileOption>
                 <CommonProperty>
                   <UseCPPCompiler>2</UseCPPCompiler>
@@ -768,14 +671,14 @@
           <GroupName>dht11</GroupName>
           <Files>
             <File>
-              <FileName>sensor_dallas_dht11.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages\dht11-latest\sensor_dallas_dht11.c</FilePath>
-            </File>
-            <File>
               <FileName>dht11_sample.c</FileName>
               <FileType>1</FileType>
               <FilePath>packages\dht11-latest\dht11_sample.c</FilePath>
+            </File>
+            <File>
+              <FileName>sensor_dallas_dht11.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>packages\dht11-latest\sensor_dallas_dht11.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -833,6 +736,11 @@
               <FilePath>..\..\..\..\components\finsh\shell.c</FilePath>
             </File>
             <File>
+              <FileName>msh_parse.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\components\finsh\msh_parse.c</FilePath>
+            </File>
+            <File>
               <FileName>cmd.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\components\finsh\cmd.c</FilePath>
@@ -841,11 +749,6 @@
               <FileName>msh.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\components\finsh\msh.c</FilePath>
-            </File>
-            <File>
-              <FileName>msh_parse.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\..\components\finsh\msh_parse.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -918,19 +821,9 @@
           <GroupName>Libraries</GroupName>
           <Files>
             <File>
-              <FileName>gd32f4xx_usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_usart.c</FilePath>
-            </File>
-            <File>
               <FileName>gd32f4xx_rcu.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_rcu.c</FilePath>
-            </File>
-            <File>
-              <FileName>gd32f4xx_fwdgt.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_fwdgt.c</FilePath>
             </File>
             <File>
               <FileName>gd32f4xx_gpio.c</FileName>
@@ -938,14 +831,14 @@
               <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_gpio.c</FilePath>
             </File>
             <File>
-              <FileName>system_gd32f4xx.c</FileName>
+              <FileName>gd32f4xx_dbg.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\libraries\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Source\system_gd32f4xx.c</FilePath>
+              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_dbg.c</FilePath>
             </File>
             <File>
-              <FileName>gd32f4xx_misc.c</FileName>
+              <FileName>gd32f4xx_usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_misc.c</FilePath>
+              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_usart.c</FilePath>
             </File>
             <File>
               <FileName>gd32f4xx_syscfg.c</FileName>
@@ -958,9 +851,14 @@
               <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_i2c.c</FilePath>
             </File>
             <File>
-              <FileName>gd32f4xx_exti.c</FileName>
+              <FileName>gd32f4xx_timer.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_exti.c</FilePath>
+              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>gd32f4xx_misc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_misc.c</FilePath>
             </File>
             <File>
               <FileName>gd32f4xx_wwdgt.c</FileName>
@@ -968,19 +866,24 @@
               <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_wwdgt.c</FilePath>
             </File>
             <File>
-              <FileName>gd32f4xx_dbg.c</FileName>
+              <FileName>system_gd32f4xx.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_dbg.c</FilePath>
+              <FilePath>..\libraries\GD32F4xx_Firmware_Library\CMSIS\GD\GD32F4xx\Source\system_gd32f4xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>gd32f4xx_exti.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_exti.c</FilePath>
+            </File>
+            <File>
+              <FileName>gd32f4xx_fwdgt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_fwdgt.c</FilePath>
             </File>
             <File>
               <FileName>gd32f4xx_can.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_can.c</FilePath>
-            </File>
-            <File>
-              <FileName>gd32f4xx_timer.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\libraries\GD32F4xx_Firmware_Library\GD32F4xx_standard_peripheral\Source\gd32f4xx_timer.c</FilePath>
             </File>
           </Files>
         </Group>

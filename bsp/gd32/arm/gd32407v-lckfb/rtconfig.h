@@ -333,6 +333,8 @@
 #define BSP_USING_GPIO
 #define BSP_USING_UART
 #define BSP_USING_UART0
+#define BSP_USING_UART2
+#define BSP_UART2_RX_USING_DMA
 #define BSP_USING_I2C2
 #define BSP_I2C2_SCL_PIN 				GET_PIN(C,9)
 #define BSP_I2C2_SDA_PIN 				GET_PIN(A,8)
